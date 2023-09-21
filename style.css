@@ -1,0 +1,256 @@
+		*{box-sizing: border-box;
+		 margin:0; padding: 0;
+		 font-family: Calibri,Consolas,Futura Bk BT;
+		}
+
+		:root{
+			--pink:#f20f97;
+			--blue:#140b63;
+			--shadow:  4px 4px 4px 4px silver;
+		}
+
+        /*<!-- ------navbar------
+	         ------------------ -->*/
+		a{
+			color: #140b63;
+			text-decoration: none;
+			padding: 10px;
+			margin-right: 20px;
+		}
+		nav{ position: fixed;
+		   font-size:20px;
+		   padding: 10px;
+		    background-color: var(--pink);
+		    width:100%;
+		    height: 10%;
+		    text-transform:capitalize; 
+
+		}
+		nav div {
+			 float:right; 
+			 display:fixed; 
+			 gap: 90px;  
+			 padding: 10px;
+/*			 margin-right: 10px;*/
+
+		}
+
+		a:hover{
+			color:white;
+			background-color:#f279bd;
+		}
+
+		 
+         #icon{
+         	color: black;
+          width: 27px;
+          height: 27px;
+         	float: right; 
+         	padding: 10px;
+         	display: none;
+         	
+         }
+        
+		
+
+		/*<!-- ------main section------
+	         ---------------------- -->*/
+         
+         .section{
+         	width:90%; 
+         	margin: 180px auto 0px auto;  
+         }
+         .main{
+         	width:90%; 
+         	margin: 10px auto;
+         	display: flex;
+         }
+         /*.img{
+         	 
+         	  float: right;
+
+           }*/
+         .img img{
+/*         	padding: 10px;*/
+         	 width:380px;
+         	 margin: 0 20px;
+         	 height: 300px;
+         }
+
+         .img img{
+         	 box-shadow: 4px 6px 6px 4px silver;
+         }
+         .text{
+         	width: 100%;
+         	margin:0  auto;
+         	text-align: center;
+
+         }
+         h2{
+         	font-size:54px;
+         	color:var(--blue) ; 
+         }
+         h1{
+         	font-size: 75px;
+         	 text-transform: capitalize;
+         	  
+         	   color: var(--pink);
+         }
+         h3{
+         	font-size:40px;
+         	color:grey ;
+         }
+         button{
+         	width:150px;
+         	 height: 50px;
+         	  background-color: pink;
+         	  color: #140b63; 
+         	  margin:40px  50px; 
+         	  border-color:var(--pink); 
+         	   font-family: Calibri; 
+         	   font-size: 20px;
+         	   border-radius: 20%;
+         	   font-weight: 600;
+         	   transition: ease 0.5s;
+         }
+         button:hover{
+         	background-color: var(--pink);
+         	color: white;
+           box-shadow: 4px 4px 4px 4px silver;
+
+        }
+
+ /*---------------------------------------
+ --------------------------------------
+ ------------MEDIA---------------------*/
+          
+        @media(min-width:1000px){
+        	.text{
+        		margin-left: 30px;
+        	}
+        }
+
+         @media(max-width:1075px){
+			h1{
+				font-size:50px;}
+				h2{
+				font-size: 47px;
+				}
+			}
+
+
+		@media(max-width:800px)
+		{
+		  h1{ 
+        font-size: 48px;
+        }
+			h2{
+			font-size: 45px;
+		   }
+			h3{
+				font-size: 35px;
+			}
+			.img img{
+        width:330px ;
+        }
+        .text{
+        justify-content: center;
+        width: 90%;
+        text-align: center;
+         }
+       .about h2{
+        margin-bottom: 20px;
+       font-size:45px;
+        }
+     }	
+
+		@media(max-width:700px){
+			.section .main {
+			 flex-direction: column;
+			 justify-content: center;
+			 align-items: center;	
+			}
+			h1{
+				font-size: 55px;
+				text-align: center;
+			}
+			h2{
+				font-size: 44px;
+				
+			}
+			h3{ margin-top: 10px;
+				font-size: 34px;
+			}
+			.main{
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+			}
+			
+			.img img{margin-bottom: 30px; width: 340px}
+
+           .text{
+           	margin-top: 40px;
+            	justify-content: center;
+            	width: 90%;
+            	text-align: center;
+            }
+            .about{
+            	margin-top: 60px;
+            	text-align: center;
+            	width: 90%;
+            }
+            .about h2{
+            	margin-bottom: 20px;
+            	font-size:45px;
+            }
+          }
+		
+		@media(max-width:500px){
+			.img img{
+				margin-bottom: 70px;
+			}
+         nav{
+         	padding: 5px;
+         	margin: 0;
+         }
+         #icon{
+         	display: block;
+         }
+         nav div a{
+         	display: none;
+         }
+         .text{
+				text-align: center;
+				margin-top: 20px;
+			}
+			h1{
+				font-size: 48px;
+			}
+			h2{
+				font-size: 36px;
+			}
+			h3{
+				font-size: 25px;
+			}
+		}
+		
+
+		/*<!-- ------about section------
+	      ---------------------- -->*/
+
+		.about{
+			width:90%; 
+			margin: 0 auto;
+			 margin-top: 70px;
+			 margin-bottom: 40px;
+		}
+		.about h2{
+			margin-bottom: 20px;
+
+		}
+		p{
+			color: grey;
+			font-size: 20px;
+			font-family: Calibri;
+		}
